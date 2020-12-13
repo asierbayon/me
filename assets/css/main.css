@@ -1,0 +1,346 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&family=Roboto+Mono:ital,wght@0,300;1,300&display=swap');
+@font-face {
+    font-family: 'iconmonstr';
+    src: url('assets/font/iconmonstr-iconic-font.woff');
+}
+
+
+body * {
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+nav {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: center;
+    margin-top: 20px;
+    padding-right: 2vw;
+}
+
+nav * {
+    font-size: 14px;
+    color: #48455a;
+}
+
+nav ul {
+    display: flex;
+    flex-direction: row;
+    list-style-type: none;
+    margin-right: 20px;
+}
+
+nav li {
+    padding: 10px;
+    color: #48455a;
+}
+
+nav a {
+    text-decoration: none;
+}
+
+.button {
+    border: 1px solid #d8532b;
+    border-radius: 3px;
+    padding: 10px;
+    color: #d8532b;
+    max-width: 160px;
+}
+
+section {
+    max-width: 1100px;
+    margin: 0 auto;
+}
+
+#hero {
+    align-items: center;
+    height: 85vh;
+    justify-content: center;
+}
+
+#hero, #about-me, #skills, #experience, #projects {
+    display: flex;
+    flex-direction: row;
+}
+
+#about-me, #skills, #experience, #projects {
+    align-items: flex-start;
+    justify-content: flex-end;
+    margin-top: 100px;
+}
+
+#hero-img {
+    width: 60%;
+    margin-right: 40px;
+}
+
+.container {
+    padding-top: 15px;
+    width: 55%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.social-icons {
+    margin-top: 35px;
+    width: 220px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.social-icons a {
+    font-size: 30px;
+    text-decoration: none;
+    color: #d8532b;
+}
+
+h1, h2, h3, h4 {
+    color:  #48455a;
+}
+
+h1 {
+    font-size: 62px;
+}
+
+h2 {
+    font-size: 42px;
+    padding-right: 80px;
+}
+
+p, .skills-category li {
+    color: #77776b;
+}
+
+.mono, .copyright {
+    font-family: 'Roboto Mono', monospace;
+    font-weight: 600;
+    color: #d8532b;
+}
+
+.container p {
+    padding-top: 10px;
+    text-align: justify;
+}
+
+.container a {
+    text-decoration: none;
+    color: #d8532b;
+}
+
+.skills-table {
+    margin: 10px 0 40px 0;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.skills-category {
+    margin-right: 20px;
+}
+
+.skills-category:last-of-type {
+    margin-right: 0px;
+}
+
+h3 {
+    margin-bottom: 8px;
+}
+
+.skills-category li {
+    list-style-type: none;
+    font-size: 16px;
+    font-weight: 400;
+}
+
+.footnote {
+    font-family: 'Roboto Mono', monospace;
+}
+
+#experience .container {
+    margin-top: 10px;
+}
+
+.job {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-bottom: 30px;
+}
+
+.date {
+    font-family: 'Roboto Mono', monospace;
+    line-height: 0;
+}
+
+.project {
+    height: 200px;
+    margin-bottom: 30px;
+    border-radius: 6px;
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+    display: flex;
+    flex-direction: row;
+}
+
+.project-img {
+    height: 100%;
+    width: 40%;
+    border-radius: 5px 0 0 5px;
+}
+
+.project-info {
+    padding: 30px 40px 40px 40px;
+    height: 100%;
+}
+
+.social-links {
+    margin-top: 20px;
+    width: 60px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.social-links .fab {
+    font-size: 20px;
+}
+
+.social-links .fas {
+    font-size: 18px;
+}
+
+#projects {
+    margin-bottom: 100px;
+}
+
+footer {
+    padding-bottom: 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+footer .social-icons {
+    margin-bottom: 50px;
+}
+.copyright {
+    color: black;
+}
+
+.copyright a {
+    font-family: 'Roboto Mono', monospace;
+    color: #d8532b;
+    text-decoration: none;
+}
+
+@media only screen and (max-width: 1024px) {
+    #hero {
+        flex-direction: column;
+        height: 90vh;
+    }
+    #hero img {
+        width: 40%;
+        margin-bottom: 50px;
+        margin-right: 0;
+    }
+    #hero .container {
+        width: 60%;
+    }
+    #about-me, #skills, #experience, #projects {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    h2 {
+        padding-right: 0;
+        margin-bottom: 30px;
+    }
+    .container {
+        width: 70%;
+    }
+}
+
+@media only screen and (max-width: 828px) {
+    .project {
+        flex-direction: column;
+        height: 550px;
+    }
+    .project-img {
+        border-radius: 5px 5px 0 0;
+        height: 65%;
+        width: 100%;
+    }
+}
+
+@media only screen and (max-width: 654px) {
+    h1 {
+        font-size: 52px;
+    }
+}
+
+@media only screen and (max-width: 414px) {
+    nav {
+        visibility: hidden;
+    }
+
+    h1 {
+        font-size: 42px;
+    }
+    #hero {
+        height: 77vh;
+    }
+    #hero img {
+        width: 80%
+    }
+    h2 {
+        font-size: 28px;
+        margin-bottom: 15px;
+    }
+    #hero .container, .container {
+        width: 85%;
+    }
+    .skills-table {
+        flex-wrap: wrap;
+        justify-content: space-between;
+        margin: 0 auto;
+        padding: 0;
+        width: 90%;
+    }
+    .skills-category {
+        width: 130px;
+        margin-right: 0;
+        margin-bottom: 20px;
+    }
+    .job {
+        flex-direction: column;
+    }
+    #experience .button {
+        margin-top: 20px;
+    }
+    .project {
+        flex-direction: column;
+        height: 40%;
+    }
+    .project-img {
+        border-radius: 5px 5px 0 0;
+        height: 53%;
+        width: 100%;
+    }
+    @media only screen and (max-width: 320px) {
+        #hero {
+            height: 70vh;
+        }
+        .skills-table {
+            width: 92%;
+        }
+        .skills-category {
+            width: 100px;
+        }
+        .copyright {
+            width: 70%;
+            text-align: center;
+        }
+    }
+}
