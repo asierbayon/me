@@ -177,23 +177,22 @@ h3 {
 }
 
 .project {
-    height: 200px;
+    height: max-content;
     margin-bottom: 30px;
     border-radius: 6px;
     box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
     display: flex;
-    flex-direction: row;
 }
 
 .project-img {
-    height: 100%;
-    width: 40%;
+    min-width: 240px;
+    background-position: center;
+    background-size: cover;
     border-radius: 5px 0 0 5px;
 }
 
 .project-info {
     padding: 30px 40px 40px 40px;
-    height: 100%;
 }
 
 .social-links {
